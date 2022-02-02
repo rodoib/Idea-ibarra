@@ -1,0 +1,918 @@
+ *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    max-width: 100%;
+} 
+
+/* GRID AREAS */
+
+body{
+   
+    background: #000; 
+    font-family: 'Mukta', sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"
+    "cuerpo cuerpo cuerpo"
+    "pie pie pie"
+    ;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: auto 100% auto;
+    
+}
+
+header{
+    grid-area: cabeza;
+    
+    }
+    
+    main{ 
+    grid-area: cuerpo;
+    
+    }
+    
+    footer{
+    grid-area: pie;
+    }
+
+/* header */
+
+/* height: 100vh;
+    background-image: url(../img/show8.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position:center; */
+
+.hero{
+    background: #00c2c7;
+    
+}
+
+ .container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    
+}
+
+
+.nav ul {
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    font-weight: 600;
+    font-size: 1.5em;
+    list-style: none;
+    
+    
+}
+
+li a{
+    text-decoration: none;
+    color: #fff;
+    border: #ffff solid 1px;
+    border-radius: 10%;
+    padding: 3px 3px;
+    margin-left: 3px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+.nav li  :hover{
+    background: #0086ad;
+    
+}
+
+.title{
+    color: #daf8e3;
+    font-size: 2.5em;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.subtitle{
+    color: #daf8e3;
+    font-size: 25px;
+    font-family: 'Mukta', sans-serif;
+}
+
+/* footer*/
+.footer{
+    background: #00c2c7;
+}
+.footer__grid{
+font-size: 1em;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+justify-items: center;
+
+}
+
+.container.footer__grid h3{
+color: #fff;
+}
+
+.footer__horarios{
+    display: flex;
+    flex-direction: column;
+    color: #fff;    
+}
+
+
+.footer__copy{
+    color: #fff;
+    font-weight: 700;
+}
+
+
+.footer__icon{
+    color: inherit;
+    font-size: 2em;
+    text-decoration: none;
+    
+} 
+
+.footer__container-icons{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    text-align:center;
+    border: 1px solid #fff;
+    border-radius: 50%;     
+}
+
+
+
+.fab.footer__icon{
+    line-height: 40px;
+}
+
+
+/* INICIO */
+
+.img__menu{
+    display: flex;
+    justify-content: center;
+    
+}
+.presentation {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 10% 15%;   
+}
+
+.presentation__inicio{
+    color: #97ebdb;
+    margin: 20% 0;
+}
+
+/* MENU */
+
+
+
+.carta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin:10% auto;
+    background: #0086ad;
+    border-radius: 2%;
+    text-decoration: underline #daf8e3;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 110vh 90vh;
+    color: #daf8e3;
+    margin: 0 20%;
+}
+.menu article{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 5%;
+    background: #0086ad;
+    border-radius: 2%;  
+}
+ .menu__subtitle{
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+    font-size: 2.5em;
+    color: #daf8e3;
+} 
+ 
+ .menu__postre h2{
+     margin: 5% 0;
+ }
+
+.menu h3{
+    margin-left: 5%;
+    font-size: 1.5em;    
+}
+.menu li{
+display: flex;
+justify-content: space-between;
+list-style: none;
+margin:0 5%;
+font-size: 1.2em;
+}
+
+.img{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+.menu__img{
+    width: auto;
+    height: 85vh;
+}
+
+/* DISCOGRAFIA */
+
+.disco{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 10% ;
+}
+
+.disco__albums{
+   display: flex;
+   justify-content: center;
+   margin: 20% 0;
+}
+
+#disco__uno{
+    margin-right: 15%;
+}
+
+#disco__dos{
+    margin: 0 5%;
+}
+
+#disco__tres{
+    margin-left: 15%;
+}
+
+/* GALERIA */
+.galeria {
+    text-align: center; 
+    margin: 5%;
+}
+
+.galeria__imagenes{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
+.imagenes{
+    width: 25rem;
+}
+
+.imagenes img{
+    width: 100%;
+}
+/* CONTACTO */
+
+
+
+.contacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh 100vh;
+    justify-items: center;
+    text-align: center;
+    margin: 10% ;
+    
+}
+
+.contacto__form{
+    width: 100%;
+}
+/* formulario */
+
+.form{
+    background: #0086ad;
+    padding: 30px; 
+    border-radius: 5px;
+    width: 90%;
+    height: 80vh;
+    margin: 20% 0;    
+    }
+
+.form h2{
+    font-size: 30px;
+    color: #daf8e3;
+    font-weight: 900;
+    margin: 10px 200px;
+}
+.form div{
+    font-size: 20px;
+    color: #daf8e3;
+}
+
+.form__controls{
+width: 100%;
+padding: 10px 0 ;
+font-size: 15px;
+border: solid 1px #000;
+}
+
+#message{
+    padding: 20px 0 ;
+}
+
+.form__botons {
+    display: flex;
+    }
+
+.form__boton1{
+    width: 100%;
+    margin-right:  5px;
+    display: inline-block;
+    color: #000;
+    background:#daf8e3;
+    
+}
+.form__boton2{
+    width: 100%;
+    margin-left: 5px;
+    display: inline-block;
+    color: #000;
+    background: #daf8e3
+}
+
+.form__boton1:hover,.form__boton2:hover{
+    background: #0086ad;
+}
+
+.form__check{
+padding: 5px 0;
+text-align: center;
+font-size: 15px;
+}
+.form__check a{
+    color: #daf8e3;
+    text-decoration: none;
+} 
+.form__check a:hover{
+    text-decoration: underline;
+    color: #daf8e3;
+}
+
+.form__check--input{
+margin: 0 20px ;
+
+}
+
+/* MAPA */
+
+.contacto__ubication{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+.ubication__map{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.mapa{
+    
+    margin: 20% 0;
+    height: 50vh; 
+    width: 90%;
+}
+
+
+/* RESPONSIVE DESIGNE */
+/* Estilos generales */
+/* Tablet */
+
+@media (min-width:600px) and (max-width:1200px){
+
+    body{
+        
+        background: #000; 
+        font-family: 'Mukta', sans-serif;
+        display: grid;
+        grid-template-areas: 
+        "cabeza cabeza"
+        "cuerpo cuerpo"
+        "pie pie"
+        ;
+        grid-template-columns: 50% 50%;
+        grid-template-rows:  1fr 100% 1fr;
+    }
+    
+    header{
+        grid-area: cabeza;
+        
+        }
+        
+        main{ 
+        grid-area: cuerpo;
+        
+        }
+        
+        footer{
+        grid-area: pie;
+        }
+
+       .hero{
+           
+    background: #00c2c7;
+}
+
+ .container{
+  flex-direction: column;
+  align-items: center;
+}
+
+.img__menu{
+    flex-direction: column;
+}
+
+ .nav ul {
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    font-size: 2em;    
+    padding: 0;
+}
+
+li a{
+    display: flex;
+    border: #ffff solid 3px;
+    padding: 0;
+}
+
+.title{
+    font-size: 3em;
+}
+
+/* footer*/
+
+ .footer{
+    background: #00c2c7;
+}
+.footer__grid{
+font-size: 1.5em;
+display: grid;
+grid-template-columns: 2fr 1fr ;
+justify-items: center;
+align-items: flex-start;
+padding: 2%;
+}
+
+.footer__contact h3{
+    display: none;
+}
+
+.footer__container{
+    margin: 10% 0;
+    
+    display: flex;
+    
+    align-self: flex-end;
+}
+
+.footer__icon{
+    color: inherit;
+    font-size: 3em;
+    text-decoration: none;
+    display: flex;
+    align-self: center;
+    margin: auto;    
+} 
+
+ .footer__container-icons{
+    display: flex;
+    
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;   
+
+} 
+
+.presentation__inicio{
+    font-size: 2em;
+}
+
+/* Menu */
+.carta{
+    font-size: 2em;
+    margin: 10% 0;
+    
+}
+
+ .menu{
+    display: flex;
+    flex-direction: column;   
+    color: #daf8e3;
+    margin: 0;
+    background-image: url(../img/bar.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+ .menu__subtitle{
+    font-size: 3.5em;
+} 
+ 
+ .menu__postre h2{
+     margin: 5% 0;
+ }
+
+.menu h3{
+    margin-left: 5%;
+    font-size: 2.5em;    
+}
+.menu li{
+margin:0 5%;
+font-size: 2.0em;
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+}
+.menu__img{
+    display: none;
+}
+/* Discografia */
+
+.disco{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 10% ;
+    text-align: center;
+    
+}
+
+.disco__albums{
+   display: flex;
+   flex-flow: column nowrap;
+}
+
+#disco__uno{
+    margin: 20% 0;
+}
+
+#disco__dos{
+    margin:20% 0;
+}
+
+#disco__tres{
+    margin:20% 0;
+} 
+/* CONTACTO */
+
+
+
+.contacto{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    
+}
+
+.contacto__form{
+    width: 100%;
+    
+}
+
+
+
+/* formulario */
+ 
+.form{
+    background: #0086ad;
+    padding: 1.5em; 
+    border-radius: 5px;
+    width: 100%;
+    margin: 20% 0;
+    height: 100vh;
+    }
+
+.form h2{
+    font-size: 3em;
+    margin: 0;
+}
+.form div{
+    font-size: 2em;
+    color: #daf8e3;
+    
+}
+
+.form__controls{
+width: 100%;
+padding: 10px 0 ;
+font-size: 20px;
+border: solid 1px #000;
+}
+
+.form__check{
+padding: 0;
+text-align: start;
+font-size: 1em;
+margin: 3% 0;
+}
+
+/* MAPA */
+
+.contacto__ubication{
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: start;
+    width: 100%;
+    margin: 20% 0;  
+}
+
+
+
+.ubication__map{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.mapa{
+ 
+    width: 100%;
+} 
+}
+
+/*Smartphone*/
+
+@media (max-width:599px) {
+
+    body{
+        width: 100%;
+        background: #000; 
+        font-family: 'Mukta', sans-serif;
+        display: grid;
+        grid-template-areas: 
+        "cabeza" 
+        "cuerpo"
+        "pie"
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows:  1fr 100% 1fr ;
+       max-width: 100%;
+    }
+    
+    header{
+        grid-area: cabeza;
+        
+        }
+        
+        main{ 
+        grid-area: cuerpo;
+        
+        }
+        
+        footer{
+        grid-area: pie;
+        }
+
+    
+
+  .container{
+  flex-direction: column;
+  align-items: center;
+}
+
+ .img__menu{
+    flex-direction: column;
+}
+
+
+  .nav ul {
+    font-size: 1.2em;    
+    padding: 0;
+} 
+
+li a{
+    display: flex;
+    border: #ffff solid 3px;
+    padding: 0;
+}
+
+.title{
+    font-size: 3.5em;
+} 
+
+/* footer*/
+
+  .footer{
+    background: #00c2c7;
+}
+.footer__grid{
+display: flex;
+flex-direction: column;
+font-size: 1.5em;
+}
+
+.footer__hour{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5%;
+}
+.footer__contact h3{
+    display: none;
+}
+
+.footer__container{
+    margin: 10% 0;
+    
+    display: flex;
+    
+    align-self: flex-end;
+}
+
+.footer__icon{
+    color: inherit;
+    font-size: 2em;
+    text-decoration: none;
+    display: flex;
+    align-self: center;
+    margin: auto;    
+} 
+
+ .footer__container-icons{
+    display: flex;
+    width: 70px;
+    height: 70px;
+
+} 
+        
+.presentation__inicio{
+    font-size: 2em;
+}
+
+/* MENU */
+
+.carta{
+    font-size: 1em;
+    margin: 10% 0;
+    
+}
+
+ .menu{
+    display: flex;
+    flex-direction: column;   
+    color: #daf8e3;
+    margin: 0;
+    background-image: url(../img/bar.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+ .menu__subtitle{
+    font-size: 3.5em;
+} 
+ 
+ .menu__postre h2{
+     margin: 5% 0;
+ }
+
+.menu h3{
+    margin-left: 5%;
+    font-size: 2.5em;    
+}
+.menu li{
+margin:0 5%;
+font-size: 2.0em;
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+}
+.menu__img{
+    display: none;
+} 
+
+/* DISCOGRAFIA */ 
+
+.disco{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 10% ;
+    align-items: flex-start;
+    
+}
+
+.disco__albums{
+   display: flex;
+   flex-flow: column nowrap;
+}
+
+#disco__uno{
+    margin: 20% 0;
+}
+
+#disco__dos{
+    margin:20% 0;
+}
+
+#disco__tres{
+    margin:20% 0;
+}
+/* CONTACTO */
+
+
+
+.contacto{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    
+}
+
+.contacto__form{
+    width: 100%;
+    
+}
+
+
+/* formulario */
+ 
+.form{
+    background: #0086ad;
+    padding: 1.5em; 
+    border-radius: 5px;
+    width: 100%;
+    margin: 20% 0;
+    height: 100%;
+    }
+
+.form h2{
+    font-size: 3em;
+    margin: 0;
+}
+.form div{
+    font-size: 2em;
+    color: #daf8e3;
+    
+}
+
+.form__controls{
+width: 100%;
+padding: 10px 0 ;
+font-size: 20px;
+border: solid 1px #000;
+}
+
+.form__check{
+padding: 0;
+text-align: start;
+font-size: 1em;
+margin: 3% 0;
+}
+
+/* MAPA */
+
+.contacto__ubication{
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: start;
+    width: 100%;
+    
+}
+
+.contacto__ubication h2{
+font-size: 3em;
+margin: 20% 0;
+
+}
+
+.ubication__map{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.mapa{
+    margin: 20% 0;
+    width: 100%;
+} 
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo.JPG" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
+    <title>Proyecto Rodolfo</title>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container">
+            <section class="hero__container">
+                <div class="hero__logo"><a href="../index.html"><img src="../img/logo.png" alt="Logo de la web"></a>
+                </div>
+            </section>
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="roots/../menu.html">Menú</a></li>
+                    <li><a href="roots/../discografia.html">Discografía</a></li>
+                    <li><a href="roots/../galleria.html">Galeria</a></li>
+                    <li><a href="roots/../contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="contacto">
+            <article class="contacto__form">
+                <h2 class="title">Contactanos</h2>
+                <form action="" class="form">
+                    <h2>Ingresar datos:</h2>
+                    <div id="fullname">
+                        <label for="fullname">Nombre & apellido</label>
+                        <input class="form__controls" type="text" name="fullname" id="fullname"
+                            placeholder="Nombre y apellido" required>
+                    </div>
+                    <div id="email">
+                        <label for="mail">Email</label>
+                        <input class="form__controls" type="email" name="mail" id="mail" placeholder="Ejemplo@gmail.com"
+                            required>
+                    </div>
+                    <div id="phone">
+                        <label for="">Whatsapp</label>
+                        <input class="form__controls" type="tel" name="phone" id="phone" placeholder="011-25456387"
+                            required>
+                    </div>
+                    <div id="issue">
+                        <label for="">Asunto</label>
+                        <input class="form__controls" type="text" name="issue" id="issue" placeholder="Asunto" required>
+                    </div>
+                    <div id="message">
+                        <label for=""></label>
+                        <textarea class="form__controls" name="message" id="message" cols="30" rows="10"
+                            placeholder="Deja tu consulta"></textarea>
+                    </div>
+                    <div class="form__botons">
+                        <button class="form__boton1" type="submit">Enviar</button>
+                        <input class="form__boton2" type="reset" value="Borrar">
+                    </div>
+                    <div class="form__check">
+                        <label class="form__check" for="gridCheck">
+                            Estoy de acuerdo con los <a href="#" target="_blank">Teminos y condiciones</a>
+                        </label>
+                        <input class="form__check" type="checkbox" id="gridCheck">
+                    </div>
+                </form>
+            </article>
+
+            <article class="contacto__ubication">
+                
+                <h2 class="title">¿Dónde encontrarnos?</h2>
+                <div class="ubication__map">
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13137.183476356693!2d-58.4991061!3d-34.5966792!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5a46919b3a382f46!2s40x%205%20Tributo%20Bar!5e0!3m2!1ses!2sar!4v1640742789702!5m2!1ses!2sar"
+                         style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </article>
+        </section>
+
+
+
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__grid">
+            <section class="footer__hour">
+                <h3>Horarios:</h3>
+                <div class="footer__horarios">
+                    <p>Domingos a Jueves: 18:00 a 01:00</p>
+                    <p>Viernes y Sábados: 18:00 a 04:00</p>
+                </div>
+            </section>
+
+            <p class="footer__copy">Todos los derechos reservados © 2022</p>
+
+            <section class="footer__contact">
+                <h3>Redes sociales:</h3>
+                <div class="footer__container">
+                    <span class="footer__container-icons">
+                        <a class="fab fa-facebook-square footer__icon"
+                            href="https://www.facebook.com/40x5-Tributo-Bar-98665603112" target="_blank"></a>
+                    </span>
+                    <span class="footer__container-icons">
+                        <a class="fab fa-instagram-square footer__icon"
+                            href="https://www.instagram.com/40x5_tributobar/?hl=es-la" target="_blank"></a>
+                    </span>
+                    <span class="footer__container-icons">
+                        <a class="fab fa-youtube footer__icon"
+                            href="https://www.youtube.com/channel/UCB_Z6rBg3WW3NL4-QimhC2A" target="_blank"></a>
+                    </span>
+                    <span class="footer__container-icons">
+                        <a class="fab fa-spotify footer__icon"
+                            href="https://open.spotify.com/artist/22bE4uQ6baNwSHPVcDxLCe" target="_blank"></a>
+                    </span>
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>
