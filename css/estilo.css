@@ -11,30 +11,8 @@ body{
    
     background: #000; 
     font-family: 'Mukta', sans-serif;
-    display: grid;
-    grid-template-areas: 
-    "cabeza cabeza cabeza"
-    "cuerpo cuerpo cuerpo"
-    "pie pie pie"
-    ;
-    grid-template-columns: 10% 80% 10%;
-    grid-template-rows: auto 100% auto;
-    
+  
 }
-
-header{
-    grid-area: cabeza;
-    
-    }
-    
-    main{ 
-    grid-area: cuerpo;
-    
-    }
-    
-    footer{
-    grid-area: pie;
-    }
 
 /* header */
 
@@ -50,13 +28,10 @@ header{
     
 }
 
- .container{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    
+#fut {
+    box-sizing: border-box;
+    max-width: 100%;
 }
-
 .navbar-color{
     background: #00c2c7;
 }
@@ -103,59 +78,6 @@ li a{
     font-family: 'Mukta', sans-serif;
 }
 
-/* footer*/
-.footer{
-    background: #00c2c7;
-}
-.footer__grid{
-font-size: 1em;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-justify-items: center;
-
-}
-
-.container.footer__grid h3{
-color: #fff;
-}
-
-.footer__horarios{
-    display: flex;
-    flex-direction: column;
-    color: #fff;    
-}
-
-
-.footer__copy{
-    color: #fff;
-    font-weight: 700;
-}
-
-
-.footer__icon{
-    color: inherit;
-    font-size: 2em;
-    text-decoration: none;
-    
-} 
-
-.footer__container-icons{
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    color: #fff;
-    text-align:center;
-    border: 1px solid #fff;
-    border-radius: 50%;     
-}
-
-
-
-.fab.footer__icon{
-    line-height: 40px;
-}
-
-
 /* INICIO */
 
 .img__menu{
@@ -193,7 +115,7 @@ color: #fff;
 .menu{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 110vh 90vh;
+    grid-template-rows: 130vh 90vh;
     color: #daf8e3;
     margin: 0 20%;
 }
@@ -410,39 +332,13 @@ margin: 0 20px ;
         
         background: #000; 
         font-family: 'Mukta', sans-serif;
-        display: grid;
-        grid-template-areas: 
-        "cabeza cabeza"
-        "cuerpo cuerpo"
-        "pie pie"
-        ;
-        grid-template-columns: 50% 50%;
-        grid-template-rows:  1fr 100% 1fr;
     }
-    
-    header{
-        grid-area: cabeza;
-        
-        }
-        
-        main{ 
-        grid-area: cuerpo;
-        
-        }
-        
-        footer{
-        grid-area: pie;
-        }
-
        .hero{
            
     background: #00c2c7;
 }
 
- .container{
-  flex-direction: column;
-  align-items: center;
-}
+ 
 
 .img__menu{
     flex-direction: column;
@@ -466,51 +362,7 @@ li a{
     font-size: 3em;
 }
 
-/* footer*/
 
- .footer{
-    background: #00c2c7;
-}
-.footer__grid{
-font-size: 1.5em;
-display: grid;
-grid-template-columns: 2fr 1fr ;
-justify-items: center;
-align-items: flex-start;
-padding: 2%;
-}
-
-.footer__contact h3{
-    display: none;
-}
-
-.footer__container{
-    margin: 10% 0;
-    
-    display: flex;
-    
-    align-self: flex-end;
-}
-
-.footer__icon{
-    color: inherit;
-    font-size: 3em;
-    text-decoration: none;
-    display: flex;
-    align-self: center;
-    margin: auto;    
-} 
-
- .footer__container-icons{
-    display: flex;
-    
-    width: 100px;
-    height: 100px;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 50%;   
-
-} 
 
 .presentation__inicio{
     font-size: 2em;
@@ -669,37 +521,8 @@ margin: 3% 0;
         width: 100%;
         background: #000; 
         font-family: 'Mukta', sans-serif;
-        display: grid;
-        grid-template-areas: 
-        "cabeza" 
-        "cuerpo"
-        "pie"
-        ;
-        grid-template-columns: 100%;
-        grid-template-rows:  1fr 100% 1fr ;
-       max-width: 100%;
+        
     }
-    
-    header{
-        grid-area: cabeza;
-        
-        }
-        
-        main{ 
-        grid-area: cuerpo;
-        
-        }
-        
-        footer{
-        grid-area: pie;
-        }
-
-    
-
-  .container{
-  flex-direction: column;
-  align-items: center;
-}
 
  .img__menu{
     flex-direction: column;
