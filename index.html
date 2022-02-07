@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/logo.JPG" type="image/x-icon">
+    <!-- Estilos de BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,17 +16,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
     <!-- animaciones -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <title>Proyecto Rodolfo</title>
 </head>
 
 <body>
     <header class="hero">
-        <div class=" container">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="hero__logo"><a href="index.html"><img src="img/logo.png" alt="Logo de la web"></a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="roots/menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="roots/discografia.html">Discografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="roots/galleria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="roots/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--  <div class=" container">
 
             <section class="animate__animated animate__lightSpeedInLeft hero__container">
                 <div class="hero__logo"><a href="index.html"><img src="img/logo.png" alt="Logo de la web"></a></div>
@@ -38,7 +73,7 @@
                     <li><a href="roots/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
-        </div>
+        </div> -->
     </header>
 
     <main>
@@ -46,36 +81,27 @@
             <img src="./img/show8.jpg" alt="the rolling stones">
         </div>
         <section class="presentation">
-            <h1 class="animate__animated animate__rubberBand title" >¿Quienes somos?</h1>
-                        
+            <h1 class="animate__animated animate__rubberBand title">¿Quienes somos?</h1>
+
             <p class="presentation__inicio"><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
-                aut cum, sint velit vero ipsam
-                amet adipisci quas magnam nisi optio ex est unde! Earum porro fugiat ea veniam
-                aliquam!</span><span>Facere aut magni ducimus eum culpa tempora animi vero, vitae rerum nemo hic a
-                voluptas fuga? Nam laudantium ipsa ipsum error libero, omnis, obcaecati sit odit sint tempore neque
-                nobis?</span><span>Quae qui, repellat autem optio cumque labore mollitia laudantium at ratione,
-                beatae voluptates alias quam? Provident harum sit rem eius placeat corrupti recusandae, consectetur
-                pariatur illum non quidem. Voluptatibus, fugit.</span><span>Minima nemo porro possimus tempore autem
-                nisi expedita libero dolores aliquam unde nesciunt quasi laborum recusandae totam officia placeat
-                laboriosam commodi cumque aut illo odio, in maxime, eveniet quis! Repellat.</span><span>Inventore
-                harum nisi veniam reprehenderit obcaecati pariatur corporis aut nostrum at molestiae architecto quam
-                odit esse non debitis, voluptate illo molestias libero facere placeat quos incidunt sapiente cum
-                quis. Explicabo.</span><span>Atque nostrum cupiditate quibusdam amet enim cum consequuntur, laborum
-                esse, autem consequatur minus dolorem natus fugit iure necessitatibus! Doloremque quis earum
-                adipisci! Minima officia sequi animi commodi tenetur repellat illo!</span><span>Exercitationem
-                perferendis dicta dignissimos consequatur accusamus dolores odit quibusdam, nulla nihil veritatis
-                maiores ut numquam, facilis dolor aliquid tenetur minus veniam necessitatibus laudantium. Totam modi
-                nulla quasi repudiandae. Labore, nisi!</span><span>Repellendus eum iusto obcaecati nam sed sapiente
-                reiciendis unde nisi. Reprehenderit soluta sint voluptates ducimus rerum similique, explicabo quidem
-                magni ex porro dignissimos minima veritatis culpa fugit nam quod laborum!</span><span>Sequi rem quo,
-                facere ipsa atque nostrum necessitatibus quibusdam explicabo sapiente in dolore ipsam asperiores
-                animi recusandae cupiditate hic at laudantium veniam id inventore placeat! Eveniet numquam sequi
-                maiores commodi.</span><span>Iure vero pariatur ullam quam voluptas dignissimos quia, architecto eos
-                et quisquam soluta officia ipsa nam optio officiis, fuga fugiat quidem velit, fugit eaque commodi!
-                Esse maxime dolore sed officiis.</span><span>Ipsum perferendis nisi necessitatibus dicta, iure
-                eveniet quaerat consectetur error! Incidunt atque ab quibusdam laboriosam saepe unde! Tempore magni
-                cupiditate praesentium voluptate, officiis ullam optio distinctio tenetur consequatur doloribus
-                laboriosam.</span></p>
+                    aut cum, sint velit vero ipsam
+                    amet adipisci quas magnam nisi optio ex est unde! Earum porro fugiat ea veniam
+                    aliquam!</span><span>Facere aut magni ducimus eum culpa tempora animi vero, vitae rerum nemo hic a
+                    voluptas fuga? Nam laudantium ipsa ipsum error libero, omnis, obcaecati sit odit sint tempore neque
+                    nobis?</span><span>Quae qui, repellat autem optio cumque labore mollitia laudantium at ratione,
+                    beatae voluptates alias quam? Provident harum sit rem eius placeat corrupti recusandae, consectetur
+                    pariatur illum non quidem. Voluptatibus, fugit.</span>
+            </p>
+            <p>
+                <span>Minima nemo porro possimus tempore autem
+                    nisi expedita libero dolores aliquam unde nesciunt quasi laborum recusandae totam officia placeat
+                    laboriosam commodi cumque aut illo odio, in maxime, eveniet quis! Repellat.</span><span>Inventore
+                    harum nisi veniam reprehenderit obcaecati pariatur corporis aut nostrum at molestiae architecto quam
+                    odit esse non debitis, voluptate illo molestias libero facere placeat quos incidunt sapiente cum
+                    quis. Explicabo.</span><span>Atque nostrum cupiditate quibusdam amet enim cum consequuntur, laborum
+                    esse, autem consequatur minus dolorem natus fugit iure necessitatibus! Doloremque quis earum
+                    adipisci! Minima officia sequi animi commodi tenetur repellat illo!</span>
+            </p>
         </section>
     </main>
 
@@ -84,7 +110,7 @@
             <section class="footer__hour">
                 <h3>Horarios:</h3>
                 <div class="footer__horarios">
-                    <p>Domingos  a Jueves: 18:00 a 01:00</p>
+                    <p>Domingos a Jueves: 18:00 a 01:00</p>
                     <p>Viernes y Sábados: 18:00 a 04:00</p>
                 </div>
             </section>
@@ -114,6 +140,14 @@
             </section>
         </div>
     </footer>
+
+    <!-- Javascript BS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
