@@ -23,30 +23,13 @@ body{
     background-attachment: fixed;
     background-position:center; */
 
-.hero{
-    background: #00c2c7;
+
     
-}
+
 
 #fut {
     box-sizing: border-box;
     max-width: 100%;
-}
-.navbar-color{
-    background: #00c2c7;
-}
-
-.nav ul {
-    
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 10vh;
-    font-weight: 600;
-    font-size: 1.5em;
-    list-style: none;
-    
-    
 }
 
 li a{
@@ -232,7 +215,7 @@ font-size: 1.2em;
     padding: 30px; 
     border-radius: 5px;
     width: 90%;
-    height: 80vh;
+    height: 90vh;
     margin: 20% 0;    
     }
 
