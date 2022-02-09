@@ -196,73 +196,44 @@ font-size: 1.2em;
 
 
 .contacto{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10vh 100vh;
-    justify-items: center;
-    text-align: center;
-    margin: 10% ;
+    margin-top:  10%;
+    margin-bottom: 30%;
+    text-align: center ;
+    gap: 5%;
     
 }
 
 .contacto__form{
     width: 100%;
+    text-align: center;
 }
 /* formulario */
 
-.form{
+/* .form{
     background: #0086ad;
     padding: 30px; 
     border-radius: 5px;
     width: 90%;
     height: 90vh;
     margin: 20% 0;    
-    }
-
-.form h2{
-    font-size: 30px;
-    color: #daf8e3;
-    font-weight: 900;
-    margin: 10px 200px;
-}
-.form div{
-    font-size: 20px;
-    color: #daf8e3;
-}
+    } */
 
 .form__controls{
-width: 100%;
-padding: 10px 0 ;
+width:65%;
 font-size: 15px;
-border: solid 1px #000;
+justify-content: center;
 }
 
-#message{
-    padding: 20px 0 ;
+.btn{
+    background: #fff;
 }
 
-.form__botons {
-    display: flex;
-    }
-
-.form__boton1{
-    width: 100%;
-    margin-right:  5px;
-    display: inline-block;
-    color: #000;
-    background:#daf8e3;
-    
-}
-.form__boton2{
-    width: 100%;
-    margin-left: 5px;
-    display: inline-block;
-    color: #000;
-    background: #daf8e3
-}
-
-.form__boton1:hover,.form__boton2:hover{
+.btn:hover{
     background: #0086ad;
+}
+
+/* .form__boton1:hover,.form__boton2:hover{
+    background: #fff;
 }
 
 .form__check{
@@ -282,15 +253,11 @@ font-size: 15px;
 .form__check--input{
 margin: 0 20px ;
 
-}
+} */
 
 /* MAPA */
 
-.contacto__ubication{
-    display: flex;
-    flex-flow: column nowrap;
-    width: 100%;
-}
+
 
 .ubication__map{
     display: flex;
@@ -299,9 +266,9 @@ margin: 0 20px ;
 }
 .mapa{
     
-    margin: 20% 0;
+    margin: 6% 0;
     height: 50vh; 
-    width: 90%;
+    width: 80%;
 }
 
 
@@ -436,11 +403,20 @@ font-size: 2.0em;
     
 }
 
+.segundotitulo{
+    margin-top: 30%;
+}
 
+.btn{
+    background: #fff;
+}
 
+.btn:hover{
+    background: #0086ad;
+}
 /* formulario */
  
-.form{
+/* .form{
     background: #0086ad;
     padding: 1.5em; 
     border-radius: 5px;
@@ -457,21 +433,22 @@ font-size: 2.0em;
     font-size: 2em;
     color: #daf8e3;
     
-}
+} */
 
 .form__controls{
+margin-left: 10%;
 width: 100%;
 padding: 10px 0 ;
 font-size: 20px;
 border: solid 1px #000;
 }
 
-.form__check{
+/* .form__check{
 padding: 0;
 text-align: start;
 font-size: 1em;
 margin: 3% 0;
-}
+} */
 
 /* MAPA */
 
@@ -487,8 +464,8 @@ margin: 3% 0;
 
 .ubication__map{
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 .mapa{
  
@@ -675,7 +652,7 @@ font-size: 2.0em;
     height: 100%;
     }
 
-.form h2{
+/* .form h2{
     font-size: 3em;
     margin: 0;
 }
@@ -683,42 +660,54 @@ font-size: 2.0em;
     font-size: 2em;
     color: #daf8e3;
     
-}
+} */
 
 .form__controls{
+display: flex;
+margin: auto;
 width: 100%;
-padding: 10px 0 ;
+margin-left: 10%;
 font-size: 20px;
 border: solid 1px #000;
 }
 
-.form__check{
+/* .form__check{
 padding: 0;
 text-align: start;
 font-size: 1em;
 margin: 3% 0;
-}
+} */
 
 /* MAPA */
 
-.contacto__ubication{
+/* .contacto__ubication{
     display: flex;
     flex-flow: column nowrap;
     text-align: start;
     width: 100%;
     
+} */
+
+.contacto{
+font-size: 1.5;
+margin-top: 40%;
+
 }
 
-.contacto__ubication h2{
-font-size: 3em;
-margin: 20% 0;
-
+.btn{
+    background: #fff;
 }
 
+.btn:hover{
+    background: #0086ad;
+}
+.segundotitulo{
+    margin-top: 30%;
+}
 .ubication__map{
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
 }
 /* .mapa{
     margin: 20% 0;
