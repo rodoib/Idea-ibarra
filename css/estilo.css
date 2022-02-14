@@ -1,31 +1,3 @@
- *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    max-width: 100%;
-} 
-
-/* GRID AREAS */
-
-body{
-   
-    background: #000; 
-    font-family: 'Mukta', sans-serif;
-  
-}
-
-/* header */
-
-/* height: 100vh;
-    background-image: url(../img/show8.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-attachment: fixed;
-    background-position:center; */
-
-
-    
-
 
 #fut {
     box-sizing: border-box;
@@ -63,22 +35,7 @@ li a{
 
 /* INICIO */
 
-.img__menu{
-    display: flex;
-    justify-content: center;
-    
-}
-.presentation {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    margin: 10% 15%;   
-}
 
-.presentation__inicio{
-    color: #97ebdb;
-    margin: 20% 0;
-}
 
 /* MENU */
 
@@ -193,83 +150,6 @@ font-size: 1.2em;
 }
 /* CONTACTO */
 
-
-
-.contacto{
-    margin-top:  10%;
-    margin-bottom: 30%;
-    text-align: center ;
-    gap: 5%;
-    
-}
-
-.contacto__form{
-    width: 100%;
-    text-align: center;
-}
-/* formulario */
-
-/* .form{
-    background: #0086ad;
-    padding: 30px; 
-    border-radius: 5px;
-    width: 90%;
-    height: 90vh;
-    margin: 20% 0;    
-    } */
-
-.form__controls{
-width:65%;
-font-size: 15px;
-justify-content: center;
-}
-
-.btn{
-    background: #fff;
-}
-
-.btn:hover{
-    background: #0086ad;
-}
-
-/* .form__boton1:hover,.form__boton2:hover{
-    background: #fff;
-}
-
-.form__check{
-padding: 5px 0;
-text-align: center;
-font-size: 15px;
-}
-.form__check a{
-    color: #daf8e3;
-    text-decoration: none;
-} 
-.form__check a:hover{
-    text-decoration: underline;
-    color: #daf8e3;
-}
-
-.form__check--input{
-margin: 0 20px ;
-
-} */
-
-/* MAPA */
-
-
-
-.ubication__map{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-.mapa{
-    
-    margin: 6% 0;
-    height: 50vh; 
-    width: 80%;
-}
 
 
 /* RESPONSIVE DESIGNE */

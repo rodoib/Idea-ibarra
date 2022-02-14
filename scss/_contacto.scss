@@ -1,0 +1,40 @@
+.contacto{
+    margin-top:  10%;
+    margin-bottom: 30%;
+    text-align: center ;
+    gap: 5%;
+    
+        .contacto__form{
+                 width: 100%;
+                 text-align: center;
+                 
+                 .form__controls{
+                    width:65%;
+                    font-size: 15px;
+                    justify-content: center;
+        }
+        .btn{
+            background: #fff;
+        &:hover{
+            background: #0086ad;
+        }
+    }
+
+  }
+}
+
+/* MAPA */
+
+.ubication__map{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+           .mapa{
+    
+               margin: 6% 0;
+               height: 50vh; 
+               width: 80%;
+  }
+
+}

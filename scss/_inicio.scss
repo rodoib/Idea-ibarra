@@ -1,0 +1,19 @@
+.img__menu{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.presentation {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 10% 15%;   
+
+            .presentation__inicio{
+                color: #97ebdb;
+                margin: 20% 0;
+        }
+
+
+}

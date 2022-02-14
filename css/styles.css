@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%; }
+
+body {
+  background: #000;
+  font-family: 'Mukta', sans-serif; }
+
+.img__menu {
+  display: flex;
+  justify-content: center; }
+
+.presentation {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 10% 15%; }
+  .presentation .presentation__inicio {
+    color: #97ebdb;
+    margin: 20% 0; }
+
+.contacto {
+  margin-top: 10%;
+  margin-bottom: 30%;
+  text-align: center;
+  gap: 5%; }
+  .contacto .contacto__form {
+    width: 100%;
+    text-align: center; }
+    .contacto .contacto__form .form__controls {
+      width: 65%;
+      font-size: 15px;
+      justify-content: center; }
+    .contacto .contacto__form .btn {
+      background: #fff; }
+      .contacto .contacto__form .btn:hover {
+        background: #0086ad; }
+
+/* MAPA */
+.ubication__map {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+  .ubication__map .mapa {
+    margin: 6% 0;
+    height: 50vh;
+    width: 80%; }
