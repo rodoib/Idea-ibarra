@@ -1,3 +1,8 @@
+
+
+
+$primario: #0086ad;
+
 .contacto{
     margin-top:  10%;
     margin-bottom: 30%;
@@ -8,6 +13,7 @@
                  width: 100%;
                  text-align: center;
                  
+
                  .form__controls{
                     width:65%;
                     font-size: 15px;
@@ -16,7 +22,7 @@
         .btn{
             background: #fff;
         &:hover{
-            background: #0086ad;
+            background: $primario;
         }
     }
 
