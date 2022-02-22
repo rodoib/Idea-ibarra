@@ -4,16 +4,31 @@
     
 }
 
+
+/* MIXIN */
+@mixin tamaño($ancho, $alto){
+width: $ancho;
+height: $alto;
+}
+
 .presentation {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     margin: 10% 15%;   
 
-            .presentation__inicio{
+            .parrafo__uno{
                 color: #97ebdb;
                 margin: 20% 0;
+                @include tamaño(700px, 170px)
         }
 
 
+}
+
+/* EXTEND */
+.parrafo__dos{
+    @extend .parrafo__uno;
+    border: solid pink 1px;
+    
 }

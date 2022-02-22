@@ -12,14 +12,21 @@ body {
   display: flex;
   justify-content: center; }
 
+/* MIXIN */
 .presentation {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   margin: 10% 15%; }
-  .presentation .presentation__inicio {
+  .presentation .parrafo__uno, .presentation .parrafo__dos {
     color: #97ebdb;
-    margin: 20% 0; }
+    margin: 20% 0;
+    width: 700px;
+    height: 170px; }
+
+/* EXTEND */
+.parrafo__dos {
+  border: solid pink 1px; }
 
 .contacto {
   margin-top: 10%;
@@ -47,3 +54,20 @@ body {
     margin: 6% 0;
     height: 50vh;
     width: 80%; }
+
+/*  MAPS */
+.fa-facebook {
+  background: #000F92;
+  border: #000F92; }
+
+.fa-instagram {
+  background: #EC4E13;
+  border: #EC4E13; }
+
+.fa-youtube {
+  background: #FF0400;
+  border: #FF0400; }
+
+.fa-spotify {
+  background: #29C200;
+  border: #29C200; }

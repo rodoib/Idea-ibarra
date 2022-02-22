@@ -1,0 +1,15 @@
+/*  MAPS */
+$redes:(
+facebook:#000F92,
+instagram:#EC4E13,
+youtube:#FF0400,
+spotify:#29C200,
+);
+
+@each $clave, $valor in $redes {
+    .fa-#{$clave}{
+        background: $valor;
+        border:$valor;
+    }
+}
+
