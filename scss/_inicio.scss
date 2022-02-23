@@ -1,34 +1,22 @@
-.img__menu{
+/* Página  inicio */
+.img__menu {
     display: flex;
     justify-content: center;
-    
-}
-
-
-/* MIXIN */
-@mixin tamaño($ancho, $alto){
-width: $ancho;
-height: $alto;
 }
 
 .presentation {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    margin: 10% 15%;   
+    margin: 10% 15%;
 
-            .parrafo__uno{
-                color: #97ebdb;
-                margin: 20% 0;
-                @include tamaño(700px, 170px)
-        }
-
-
-}
-
-/* EXTEND */
-.parrafo__dos{
-    @extend .parrafo__uno;
-    border: solid pink 1px;
-    
+    .parrafo__uno {
+        color: #97ebdb;
+        margin: 15% 0;
+    }
+    /* EXTEND */
+    .parrafo__dos {
+        @extend .parrafo__uno;
+        color: #fff;
+    }
 }

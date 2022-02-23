@@ -1,0 +1,73 @@
+/* Página discografía */
+.disco {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 10%;
+
+    .disco__albums {
+        display: flex;
+        justify-content: center;
+        margin: 20% 0;
+
+        
+
+        #disco__dos {
+            margin: 0 10%;
+        }
+
+        
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    .disco {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 10%;
+        text-align: center;
+
+        .disco__albums {
+            display: flex;
+            flex-flow: column nowrap;
+
+            #disco__uno {
+                margin: 20% 0;
+            }
+
+            #disco__dos {
+                margin: 20% 0;
+            }
+
+            #disco__tres {
+                margin: 20% 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 599px) {
+    .disco {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 10%;
+        align-items: flex-start;
+
+        .disco__albums {
+            display: flex;
+            flex-flow: column nowrap;
+
+            #disco__uno {
+                margin: 20% 0;
+            }
+
+            #disco__dos {
+                margin: 20% 0;
+            }
+
+            #disco__tres {
+                margin: 20% 0;
+            }
+        }
+    }
+}

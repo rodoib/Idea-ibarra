@@ -1,0 +1,19 @@
+/* Página  galeria */
+.galeria {
+    text-align: center;
+    margin: 5%;
+}
+.galeria__imagenes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2rem;
+
+    .imagenes {
+        width: 25rem;
+
+        img {
+            width: 100%;
+        }
+    }
+}

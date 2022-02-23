@@ -1,46 +1,107 @@
-
-
-
+/* Página  contacto */
 $primario: #0086ad;
 
-.contacto{
-    margin-top:  10%;
+.contacto {
+    margin-top: 10%;
     margin-bottom: 30%;
-    text-align: center ;
+    text-align: center;
     gap: 5%;
-    
-        .contacto__form{
-                 width: 100%;
-                 text-align: center;
-                 
 
-                 .form__controls{
-                    width:65%;
-                    font-size: 15px;
-                    justify-content: center;
+    .contacto__form {
+        width: 100%;
+        text-align: center;
+
+        .form__controls {
+            width: 65%;
+            font-size: 15px;
+            justify-content: center;
         }
-        .btn{
+        .btn {
             background: #fff;
-        &:hover{
-            background: $primario;
+            &:hover {
+                background: $primario;
+            }
         }
     }
-
-  }
 }
 
 /* MAPA */
 
-.ubication__map{
+.ubication__map {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    
-           .mapa{
-    
-               margin: 6% 0;
-               height: 50vh; 
-               width: 80%;
-  }
 
+    .mapa {
+        margin: 6% 0;
+        height: 50vh;
+        width: 80%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    .contacto {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+
+        .contacto__form {
+            width: 100%;
+
+            .form__controls {
+                margin-left: 10%;
+                width: 100%;
+                padding: 10px 0;
+                font-size: 20px;
+                border: solid 1px #000;
+            }
+        }
+    }
+
+    .segundotitulo {
+        margin-top: 30%;
+    }
+    
+
+    .ubication__map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .mapa {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 599px) {
+    .contacto {
+        font-size: 1.5;
+        margin-top: 40%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+
+        .contacto__form {
+            width: 100%;
+
+            .form__controls {
+                display: flex;
+                margin: auto;
+                width: 100%;
+                margin-left: 10%;
+                font-size: 20px;
+                border: solid 1px #000;
+            }
+        }
+    }
+
+    .segundotitulo {
+        margin-top: 30%;
+    }
+    .ubication__map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

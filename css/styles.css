@@ -1,33 +1,193 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  max-width: 100%; }
+@charset "UTF-8";
+/*  Colores */
+.hero {
+  color: black; }
+  .hero .hero__nav {
+    background: #20dad8; }
+    .hero .hero__nav .nav-link {
+      color: #fff;
+      font-size: 1.5rem; }
 
-body {
-  background: #000;
-  font-family: 'Mukta', sans-serif; }
-
+/* Página  inicio */
 .img__menu {
   display: flex;
   justify-content: center; }
 
-/* MIXIN */
 .presentation {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  margin: 10% 15%; }
+  margin: 10% 15%;
+  /* EXTEND */ }
   .presentation .parrafo__uno, .presentation .parrafo__dos {
     color: #97ebdb;
-    margin: 20% 0;
-    width: 700px;
-    height: 170px; }
+    margin: 15% 0; }
+  .presentation .parrafo__dos {
+    color: #fff; }
 
-/* EXTEND */
-.parrafo__dos {
-  border: solid pink 1px; }
+/* Página menú */
+.carta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% auto;
+  background: #0086ad;
+  border-radius: 2%;
+  text-decoration: underline #daf8e3; }
 
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 130vh 90vh;
+  color: #daf8e3;
+  margin: 0 20%; }
+  .menu article {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 5%;
+    background: #0086ad;
+    border-radius: 2%; }
+    .menu article .menu__subtitle {
+      display: flex;
+      justify-content: center;
+      margin: 5% 0;
+      font-size: 2.5em;
+      color: #daf8e3; }
+  .menu h3 {
+    margin-left: 5%;
+    font-size: 1.5em; }
+  .menu li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 5%;
+    font-size: 1.2em; }
+
+.img {
+  display: grid;
+  justify-items: center;
+  align-content: center; }
+  .img .menu__img {
+    width: auto;
+    height: 85vh; }
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .carta {
+    font-size: 2em;
+    margin: 10% 0; }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    color: #daf8e3;
+    margin: 0;
+    background-image: url(../img/bar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .menu .menu__subtitle {
+      font-size: 3.5em; }
+    .menu h3 {
+      margin-left: 5%;
+      font-size: 2.5em; }
+    .menu li {
+      margin: 0 5%;
+      font-size: 2em; }
+  .img {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center; }
+    .img .menu__img {
+      display: none; } }
+
+@media (max-width: 599px) {
+  .carta {
+    font-size: 1em;
+    margin: 10% 0; }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    color: #daf8e3;
+    margin: 0;
+    background-image: url(../img/bar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .menu .menu__subtitle {
+      font-size: 3.5em; }
+    .menu h3 {
+      margin-left: 5%;
+      font-size: 2.5em; }
+    .menu li {
+      margin: 0 5%;
+      font-size: 2em; }
+  .img {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center; }
+    .img .menu__img {
+      display: none; } }
+
+/* Página discografía */
+.disco {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 10%; }
+  .disco .disco__albums {
+    display: flex;
+    justify-content: center;
+    margin: 20% 0; }
+    .disco .disco__albums #disco__dos {
+      margin: 0 10%; }
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .disco {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 10%;
+    text-align: center; }
+    .disco .disco__albums {
+      display: flex;
+      flex-flow: column nowrap; }
+      .disco .disco__albums #disco__uno {
+        margin: 20% 0; }
+      .disco .disco__albums #disco__dos {
+        margin: 20% 0; }
+      .disco .disco__albums #disco__tres {
+        margin: 20% 0; } }
+
+@media (max-width: 599px) {
+  .disco {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 10%;
+    align-items: flex-start; }
+    .disco .disco__albums {
+      display: flex;
+      flex-flow: column nowrap; }
+      .disco .disco__albums #disco__uno {
+        margin: 20% 0; }
+      .disco .disco__albums #disco__dos {
+        margin: 20% 0; }
+      .disco .disco__albums #disco__tres {
+        margin: 20% 0; } }
+
+/* Página  galeria */
+.galeria {
+  text-align: center;
+  margin: 5%; }
+
+.galeria__imagenes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2rem; }
+  .galeria__imagenes .imagenes {
+    width: 25rem; }
+    .galeria__imagenes .imagenes img {
+      width: 100%; }
+
+/* Página  contacto */
 .contacto {
   margin-top: 10%;
   margin-bottom: 30%;
@@ -55,19 +215,79 @@ body {
     height: 50vh;
     width: 80%; }
 
-/*  MAPS */
-.fa-facebook {
-  background: #000F92;
-  border: #000F92; }
+@media (min-width: 600px) and (max-width: 1200px) {
+  .contacto {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start; }
+    .contacto .contacto__form {
+      width: 100%; }
+      .contacto .contacto__form .form__controls {
+        margin-left: 10%;
+        width: 100%;
+        padding: 10px 0;
+        font-size: 20px;
+        border: solid 1px #000; }
+  .segundotitulo {
+    margin-top: 30%; }
+  .ubication__map {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .ubication__map .mapa {
+      width: 100%; } }
 
-.fa-instagram {
-  background: #EC4E13;
-  border: #EC4E13; }
+@media (max-width: 599px) {
+  .contacto {
+    font-size: 1.5;
+    margin-top: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start; }
+    .contacto .contacto__form {
+      width: 100%; }
+      .contacto .contacto__form .form__controls {
+        display: flex;
+        margin: auto;
+        width: 100%;
+        margin-left: 10%;
+        font-size: 20px;
+        border: solid 1px #000; }
+  .segundotitulo {
+    margin-top: 30%; }
+  .ubication__map {
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
 
-.fa-youtube {
-  background: #FF0400;
-  border: #FF0400; }
+/*  Colores */
+/* Footer */
+.footer {
+  background: #20dad8;
+  color: #fff; }
 
-.fa-spotify {
-  background: #29C200;
-  border: #29C200; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #000;
+  font-family: "Mukta", sans-serif; }
+
+.title {
+  color: #daf8e3;
+  font-size: 4em;
+  font-family: "Noto Sans", sans-serif; }
+
+.subtitle {
+  color: #daf8e3;
+  font-size: 25px;
+  font-family: "Mukta", sans-serif; }
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  body {
+    background: #000;
+    font-family: "Mukta", sans-serif; }
+  .hero {
+    background: #00c2c7; } }

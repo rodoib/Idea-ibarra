@@ -1,0 +1,142 @@
+/* Página menú */
+.carta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 10% auto;
+    background: #0086ad;
+    border-radius: 2%;
+    text-decoration: underline #daf8e3;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 130vh 90vh;
+    color: #daf8e3;
+    margin: 0 20%;
+
+    article {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 5%;
+        background: #0086ad;
+        border-radius: 2%;
+
+        .menu__subtitle {
+            display: flex;
+            justify-content: center;
+            margin: 5% 0;
+            font-size: 2.5em;
+            color: #daf8e3;
+        }
+    }
+
+    h3 {
+        margin-left: 5%;
+        font-size: 1.5em;
+    }
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 0 5%;
+        font-size: 1.2em;
+    }
+}
+
+.img {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+
+    .menu__img {
+        width: auto;
+        height: 85vh;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    .carta {
+        font-size: 2em;
+        margin: 10% 0;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        color: #daf8e3;
+        margin: 0;
+        background-image: url(../img/bar.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .menu__subtitle {
+            font-size: 3.5em;
+        }
+
+        h3 {
+            margin-left: 5%;
+            font-size: 2.5em;
+        }
+
+        li {
+            margin: 0 5%;
+            font-size: 2em;
+        }
+    }
+
+    .img {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-content: center;
+
+        .menu__img {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 599px) {
+    .carta {
+        font-size: 1em;
+        margin: 10% 0;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        color: #daf8e3;
+        margin: 0;
+        background-image: url(../img/bar.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .menu__subtitle {
+            font-size: 3.5em;
+        }
+
+        h3 {
+            margin-left: 5%;
+            font-size: 2.5em;
+        }
+
+        li {
+            margin: 0 5%;
+            font-size: 2em;
+        }
+    }
+
+    .img {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-content: center;
+        .menu__img {
+            display: none;
+        }
+    }
+}

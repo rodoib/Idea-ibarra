@@ -1,0 +1,12 @@
+@import"colores";
+
+.hero {
+    color: black;
+    .hero__nav {
+        background: $principal;
+        .nav-link{
+            color: #fff;
+            font-size: 1.5rem;
+        }
+    }
+}

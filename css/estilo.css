@@ -1,37 +1,5 @@
 
-#fut {
-    box-sizing: border-box;
-    max-width: 100%;
-}
 
-li a{
-    text-decoration: none;
-    color: #fff;
-    border: #ffff solid 1px;
-    border-radius: 10%;
-    padding: 3px 3px;
-    margin-left: 3px;
-    font-family: 'Noto Sans', sans-serif;
-}
-
-
-
-.nav li  :hover{
-    background: #0086ad;
-    
-}
-
-.title{
-    color: #daf8e3;
-    font-size: 2.5em;
-    font-family: 'Noto Sans', sans-serif;
-}
-
-.subtitle{
-    color: #daf8e3;
-    font-size: 25px;
-    font-family: 'Mukta', sans-serif;
-}
 
 /* INICIO */
 
@@ -41,113 +9,49 @@ li a{
 
 
 
-.carta{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    margin:10% auto;
-    background: #0086ad;
-    border-radius: 2%;
-    text-decoration: underline #daf8e3;
-}
 
-.menu{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 130vh 90vh;
-    color: #daf8e3;
-    margin: 0 20%;
-}
-.menu article{
-    display: flex;
-    flex-flow: column nowrap;
-    margin: 5%;
-    background: #0086ad;
-    border-radius: 2%;  
-}
- .menu__subtitle{
-    display: flex;
-    justify-content: center;
-    margin: 5% 0;
-    font-size: 2.5em;
-    color: #daf8e3;
-} 
+
  
- .menu__postre h2{
-     margin: 5% 0;
- }
 
-.menu h3{
-    margin-left: 5%;
-    font-size: 1.5em;    
-}
-.menu li{
-display: flex;
-justify-content: space-between;
-list-style: none;
-margin:0 5%;
-font-size: 1.2em;
-}
 
-.img{
-    display: grid;
-    justify-items: center;
-    align-content: center;
-}
-.menu__img{
-    width: auto;
-    height: 85vh;
-}
 
-/* DISCOGRAFIA */
 
-.disco{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    margin-top: 10% ;
-}
 
-.disco__albums{
-   display: flex;
-   justify-content: center;
-   margin: 20% 0;
-}
 
-#disco__uno{
-    margin-right: 15%;
-}
 
-#disco__dos{
-    margin: 0 5%;
-}
 
-#disco__tres{
-    margin-left: 15%;
-}
 
-/* GALERIA */
-.galeria {
-    text-align: center; 
-    margin: 5%;
-}
 
-.galeria__imagenes{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 2rem;
-    
-}
 
-.imagenes{
-    width: 25rem;
-}
+/* MIXIN */
 
-.imagenes img{
-    width: 100%;
+/*
+@mixin tamaño($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+    }
+@include tamaño(700px, 170px)
+
+$redes:(
+facebook:#000F92,
+instagram:#EC4E13,
+youtube:#FF0400,
+spotify:#29C200,
+);
+
+@each $clave, $valor in $redes {
+    .fa-#{$clave}{
+        background: $valor;
+        border:$valor;
+    }
 }
+ */
+
+
+
+
+
+
 /* CONTACTO */
 
 
@@ -158,7 +62,7 @@ font-size: 1.2em;
 
 @media (min-width:600px) and (max-width:1200px){
 
-    body{
+   /*  body{
         
         background: #000; 
         font-family: 'Mukta', sans-serif;
@@ -166,11 +70,11 @@ font-size: 1.2em;
        .hero{
            
     background: #00c2c7;
-}
+} */
 
  
 
-.img__menu{
+/* .img__menu{
     flex-direction: column;
 }
 
@@ -196,104 +100,18 @@ li a{
 
 .presentation__inicio{
     font-size: 2em;
-}
+} */
 
 /* Menu */
-.carta{
-    font-size: 2em;
-    margin: 10% 0;
-    
-}
 
- .menu{
-    display: flex;
-    flex-direction: column;   
-    color: #daf8e3;
-    margin: 0;
-    background-image: url(../img/bar.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-}
-
- .menu__subtitle{
-    font-size: 3.5em;
-} 
- 
- .menu__postre h2{
-     margin: 5% 0;
- }
-
-.menu h3{
-    margin-left: 5%;
-    font-size: 2.5em;    
-}
-.menu li{
-margin:0 5%;
-font-size: 2.0em;
-}
-
-.img{
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-content: center;
-}
-.menu__img{
-    display: none;
-}
 /* Discografia */
 
-.disco{
-    display: flex;
-    flex-flow: column nowrap;
-    margin: 10% ;
-    text-align: center;
-    
-}
 
-.disco__albums{
-   display: flex;
-   flex-flow: column nowrap;
-}
-
-#disco__uno{
-    margin: 20% 0;
-}
-
-#disco__dos{
-    margin:20% 0;
-}
-
-#disco__tres{
-    margin:20% 0;
-} 
 /* CONTACTO */
 
 
 
-.contacto{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    
-}
 
-.contacto__form{
-    width: 100%;
-    
-}
-
-.segundotitulo{
-    margin-top: 30%;
-}
-
-.btn{
-    background: #fff;
-}
-
-.btn:hover{
-    background: #0086ad;
-}
 /* formulario */
  
 /* .form{
@@ -315,13 +133,7 @@ font-size: 2.0em;
     
 } */
 
-.form__controls{
-margin-left: 10%;
-width: 100%;
-padding: 10px 0 ;
-font-size: 20px;
-border: solid 1px #000;
-}
+
 
 /* .form__check{
 padding: 0;
@@ -331,33 +143,14 @@ margin: 3% 0;
 } */
 
 /* MAPA */
-
-.contacto__ubication{
-    display: flex;
-    flex-flow: column nowrap;
-    text-align: start;
-    width: 100%;
-    margin: 20% 0;  
 }
 
-
-
-.ubication__map{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.mapa{
- 
-    width: 100%;
-} 
-}
 
 /*Smartphone*/
 
 @media (max-width:599px) {
 
-    body{
+    /* body{
         width: 100%;
         background: #000; 
         font-family: 'Mukta', sans-serif;
@@ -382,11 +175,11 @@ li a{
 
 .title{
     font-size: 3.5em;
-} 
+}  */
 
 /* footer*/
 
-  .footer{
+ /*  .footer{
     background: #00c2c7;
 }
 .footer__grid{
@@ -432,165 +225,5 @@ font-size: 1.5em;
 .presentation__inicio{
     font-size: 2em;
 }
-
-/* MENU */
-
-.carta{
-    font-size: 1em;
-    margin: 10% 0;
-    
-}
-
- .menu{
-    display: flex;
-    flex-direction: column;   
-    color: #daf8e3;
-    margin: 0;
-    background-image: url(../img/bar.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-}
-
- .menu__subtitle{
-    font-size: 3.5em;
-} 
- 
- .menu__postre h2{
-     margin: 5% 0;
- }
-
-.menu h3{
-    margin-left: 5%;
-    font-size: 2.5em;    
-}
-.menu li{
-margin:0 5%;
-font-size: 2.0em;
-}
-
-.img{
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-content: center;
-}
-.menu__img{
-    display: none;
-} 
-
-/* DISCOGRAFIA */ 
-
-.disco{
-    display: flex;
-    flex-flow: column nowrap;
-    margin: 10% ;
-    align-items: flex-start;
-    
-}
-
-.disco__albums{
-   display: flex;
-   flex-flow: column nowrap;
-}
-
-#disco__uno{
-    margin: 20% 0;
-}
-
-#disco__dos{
-    margin:20% 0;
-}
-
-#disco__tres{
-    margin:20% 0;
-}
-/* CONTACTO */
-
-
-
-.contacto{
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    
-}
-
-.contacto__form{
-    width: 100%;
-    
-}
-
-
-/* formulario */
- 
-.form{
-    background: #0086ad;
-    padding: 1.5em; 
-    border-radius: 5px;
-    width: 100%;
-    margin: 20% 0;
-    height: 100%;
-    }
-
-/* .form h2{
-    font-size: 3em;
-    margin: 0;
-}
-.form div{
-    font-size: 2em;
-    color: #daf8e3;
-    
-} */
-
-.form__controls{
-display: flex;
-margin: auto;
-width: 100%;
-margin-left: 10%;
-font-size: 20px;
-border: solid 1px #000;
-}
-
-/* .form__check{
-padding: 0;
-text-align: start;
-font-size: 1em;
-margin: 3% 0;
-} */
-
-/* MAPA */
-
-/* .contacto__ubication{
-    display: flex;
-    flex-flow: column nowrap;
-    text-align: start;
-    width: 100%;
-    
-} */
-
-.contacto{
-font-size: 1.5;
-margin-top: 40%;
-
-}
-
-.btn{
-    background: #fff;
-}
-
-.btn:hover{
-    background: #0086ad;
-}
-.segundotitulo{
-    margin-top: 30%;
-}
-.ubication__map{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* .mapa{
-    margin: 20% 0;
-    width: 100%;
-}  */
+ */
 }

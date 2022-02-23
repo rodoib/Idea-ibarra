@@ -1,21 +1,44 @@
-*{
-    margin:0;
-    padding:0;
+
+
+@import "header";
+@import "inicio";
+@import "menu";
+@import "discografia";
+@import "galeria";
+@import "contacto";
+@import "footer";
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    max-width: 100%;
-} 
-
-
-body{
-   
-    background: #000; 
-    font-family: 'Mukta', sans-serif;
-  
+    
 }
-@import"header";
-@import"inicio";
-@import"menu";
-@import"galeria";
-@import"contacto";
-@import"footer"
+
+body {
+    background: #000;
+    font-family: "Mukta", sans-serif;
+}
+.title {
+    color: #daf8e3;
+    font-size: 4em;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.subtitle {
+    color: #daf8e3;
+    font-size: 25px;
+    font-family: "Mukta", sans-serif;
+}
+
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    body {
+        background: #000;
+        font-family: "Mukta", sans-serif;
+    }
+    .hero {
+        background: #00c2c7;
+    }
+}
 
